@@ -3,7 +3,7 @@
 // или сообщает, что третьей цифры нет.
 
 //Console.Write("Введите любое число больше 2-х символов:");
-Char[] digit = Console.ReadLine().ToCharArray();
+Char[] digit = (Console.ReadLine()??"0").ToCharArray();
 // Проверяем длину массива
 if (digit.Length >=3)
 {
